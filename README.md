@@ -4,15 +4,20 @@ Each day new protocols and technology springs up in web3 space which maybe a lit
  
 Just like how hackathons are, you get into building using these technologies solo, and list it on this platform. When project is listed, you are rest assured that your project if reviewed and passes more than 2 votes would be rewarded. This is just an initiative made for Buidlers and to reward them. 
 
-This platform tends to support building decentralized applications on the Klatyn blockchain and also using other techonologies like Covalent e.t.c. It makes use of the trust, and permissionlessness of the blockchain to reward builders
+This platform tends to support building decentralized applications on the Klatyn blockchain and also using other techonologies like Covalent e.t.c. It makes use of the trust, and permissionlessness of the blockchain to reward builders and drive mass adoption for the Klatyn blockchain.
 
 
-# How it works
-a. The smart contract handles the following functionality: Register project, Vote Project, Reward Builder e.t.c
+# Important Note
+a. The smart contract handles the following functionality: Register project, Vote Project, RewardBuilder e.t.c
 
 b. The front end enable users list projects and interact with the already deployed smart contract
 
+# How it works
 
+1. Users are expected to list their project: this field contains the name of the project, link to the project, supposed prized they want to sell for/ get rewarded for, technologies used e.g covalent or others, and description about the project(what it intends to solve). Submitting the Project calls the register function in the contract
+
+2. Having listed your project, it expected that you get greater than two votes before you can be rewarded. This is a way to minimally proof the validity of the project by others. Onclick of vote, it calls the vote function in the contract and increment the vote count of the buidler.
+3. After getting greater than 2 votes, a random lover of your project can now reward you by clicking the reward button. This action triggers the RewardBuilder method in the smart contract. 
 
 # Others
 The smart contract was deployed to BaoBab and here is the link  https://baobab.scope.klaytn.com/account/0xb44E8d6C64c51EA8CE76fE3766f3e3C19289256E?tabId=internalTx
