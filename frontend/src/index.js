@@ -183,7 +183,7 @@ let provider;
 let selectedAccount;
 let initialized = false; 
 let buildPayContract;
-const buildPayContractAddress = "0x8a3Ca362dac5Bf518BD36F9E604504883F03a314";
+const buildPayContractAddress = "0xb44E8d6C64c51EA8CE76fE3766f3e3C19289256E";
 
 export const init = async () => {
     if (window.klatyn !== 'undefined') {

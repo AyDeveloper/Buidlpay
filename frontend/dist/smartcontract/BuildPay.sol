@@ -13,7 +13,6 @@ contract BuidlPay is BuidlPayToken {
     }
 
       constructor (string memory name_, string memory symbol_, uint8 decimals_) BuidlPayToken(name_,symbol_,decimals_)  {
-        _mint(msg.sender, 1000000000 * 10 ** uint256(decimals_)); 
     }
 
     error AmountLessThanZero(); 
@@ -23,7 +22,7 @@ contract BuidlPay is BuidlPayToken {
     event RewardBuilder(address _builder, uint _token);
 
     mapping(address => Buidler) addrToBuilder;
-    mapping(address => bool) voted;
+    // mapping(address => bool) voted;
 
     function Register() public {
         Buidler storage builder = addrToBuilder[msg.sender];
@@ -35,21 +34,22 @@ contract BuidlPay is BuidlPayToken {
     function RewardBuidler(address _builderAddr) payable public {
         Buidler storage builder = addrToBuilder[_builderAddr];
         if(msg.value <= 0) revert AmountLessThanZero();
-        if(builder.voteCount < 1) revert VoteLessThanTwo();
+        if(builder.voteCount < 2) revert VoteLessThanTwo();
         require(msg.sender != _builderAddr, "BuidlPay: Active Buidler cannot reward his project");
         (bool success, ) = _builderAddr.call{value: msg.value}("");
         require(success, "BuidlPay: Failed to send Klay");
-        transfer(_builderAddr,50);
+        _mint(_builderAddr, 2 * 10 ** 18); 
+
         emit RewardBuilder(_builderAddr, 50);
     }
 
 
     function Vote(address _builderAddr) public {
         Buidler storage builder = addrToBuilder[_builderAddr];
-        require(!voted[msg.sender], "BuildPay: Cannot vote twice");
+        // require(!voted[msg.sender], "BuildPay: Cannot vote twice");
         require(msg.sender != _builderAddr, "BuidlPay: Active Buidler cannot vote his project");
         require(builder.active, "BuidlPay: Not an active Buidler");
-        voted[msg.sender] = true;
+        // voted[msg.sender] = true;
         builder.voteCount++;
         emit VoteCount(builder.voteCount);
     }
