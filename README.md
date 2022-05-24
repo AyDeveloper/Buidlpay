@@ -8,7 +8,7 @@ This platform tends to support building decentralized applications on the Klatyn
 
 
 # Important Note
-a. The smart contract handles the following functionality: Register project, Vote Project, RewardBuilder e.t.c. The sorce code for the smart contract lies in the asset folder of this repo.
+a. The smart contract handles the following functionality: Register project, Vote Project, RewardBuilder e.t.c. The source code for the smart contract lies in the asset folder of this repo.
 
 b. The front end enable users list projects and interact with the already deployed smart contract
 
@@ -24,10 +24,6 @@ b. The front end enable users list projects and interact with the already deploy
 Just like how Klaytn Foundation’s May Proof-Of-Contribution (POC) program has been announced to bring about mass adoption in the Klatyn Ecosystem, BuidlPay tends to seek partnership that would help beginners or intermediate grow their skills, get rewarded and build to expand the Klatyn Ecosystem.
 
 We tend to ensure that only Buidlers with the Buidl tokens can be eligible for grants from any future partners to scale projects long term in the Klatyn Ecosystem.
-
-
-
-
 
 
 
