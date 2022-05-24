@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BuidlPay</title>
+    <link rel="stylesheet" href="./assets/app.css">
+</head>
+<body>
+         <!-- header for logo and avatar -->
+    <header class="mainHeader">
+        <!-- headerCenter -->
+        <div class="headerCenter">
+            <!-- logo -->
+            <div class="logo">
+                <h3>BuidlPay</h3>
+            </div>
+
+            <div class="connect">
+                <button>Connect Wallet</button>
+                <div class="balDisp">
+                  
+                </div>
+            </div>
+            <!-- avatar -->
+            <!-- end of avatar -->
+        </div>
+    </header>   
+    <!-- end of header -->
+
+    <!-- Main -->
+    <main class="mainContainer">
+        <div class="mainContainerCenter">
+            <!-- dashboard -->
+            <section class="leftSide">
+               <div class="content">
+                   <h3>Get paid for Buidling</h3>
+                   <p>Explore Web3 Techonologies and Buidl around it.<br> Build real life solutions, get hands-on experience, and get rewarded in KLAY.</p>
+               </div>
+
+               <div class="steps">
+                    <div class="step1">
+                        <span>1</span>
+                        <h3>Submit Project</h3>
+                    </div>
+
+                    <div class="step1">
+                        <span>2</span>
+                        <h3>Get Two Approvals</h3>
+                    </div>
+
+                    <div class="step1">
+                        <span>3</span>
+                        <h3>Get Rewarded</h3>
+                    </div>
+               </div>
+
+               <div class="submission">
+
+                   <form class="submisionForm">
+                       <div>
+                           <input type="text" name="name" id="name" placeholder="Project Name" required>
+                           <input type="text" name="link" id="link" placeholder="Project Link" required>
+                       </div>
+
+                       <div>
+                           <input type="number" name="sale" id="sale" placeholder="Prize for Sale" required>
+                           <input type="text" name="tech" id="tech" placeholder="Technologies Used" required>
+                       </div>
+                       <div>
+                           <textarea name="desc" id="desc" cols="49" rows="5" placeholder="Project Description" required></textarea>
+                       </div>
+                       <div class="submit">
+                           <input type="submit" value="Submit Project">
+                       </div>
+                   </form>
+               </div>
+            </section>
+            <!-- end of dashboard -->
+
+            <!-- biodata  container -->
+            <section class="rightSide">
+                <div class="rightHeader">
+                    <input type="search" placeholder="Search for products">
+                    <i class="fa-solid fa-toggle-off"></i>
+                </div>
+
+                <div class="projectContainer">
+                    <div class="projectContainerCenter">
+                        <!-- <div class="projectCard">
+                            <div class="cardfirstDet">
+                                <h4>BuidlPay</h4>
+                                <p>2500~KLAY</p>
+                            </div>
+                            <a href="https://www.covalenthq.com/docs/api/"><p class="link">https://www.covalenthq.com/docs/api/</p></a>
+                            <p class="techUsed">Klay Network, Covalent, Kaiakas</p>
+                            <p class="det">Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.</p>
+                            <div class="voteDet">
+                                <button class="voteButton">Vote</button>
+                                <p>0</p>
+                            </div>
+                            <button class="rewardBtn">Reward Buidler <span>0x9233....0322</span></button>
+                        </div>
+
+                        <div class="projectCard">
+                            <div class="cardfirstDet">
+                                <h4>BuidlPay</h4>
+                                <p>2500~KLAY</p>
+                            </div>
+                            <a href="https://www.covalenthq.com/docs/api/"><p class="link">https://www.covalenthq.com/docs/api/</p></a>
+                            <p class="techUsed">Klay Network, Covalent, Kaiakas</p>
+                            <p class="det">Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.</p>
+                            <div class="voteDet">
+                                <button>Vote</button>
+                                <p>0</p>
+                            </div>
+                            <button class="rewardBtn">Reward Buidler <span>0x9233....0322</span></button>
+                        </div>
+
+                        <div class="projectCard">
+                            <div class="cardfirstDet">
+                                <h4>BuidlPay</h4>
+                                <p>2500~KLAY</p>
+                            </div>
+                            <a href="https://www.covalenthq.com/docs/api/"><p class="link">https://www.covalenthq.com/docs/api/</p></a>
+                            <p class="techUsed">Klay Network, Covalent, Kaiakas</p>
+                            <p class="det">Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.</p>
+                            <div class="voteDet">
+                                <button>Vote</button>
+                                <p>0</p>
+                            </div>
+                            <button class="rewardBtn">Reward Buidler <span>0x9233....0322</span></button>
+                        </div>
+
+                        <div class="projectCard">
+                            <div class="cardfirstDet">
+                                <h4>BuidlPay</h4>
+                                <p>2500~KLAY</p>
+                            </div>
+                            <a href="https://www.covalenthq.com/docs/api/"><p class="link">https://www.covalenthq.com/docs/api/</p></a>
+                            <p class="techUsed">Klay Network, Covalent, Kaiakas</p>
+                            <p class="det">Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.</p>
+                            <div class="voteDet">
+                                <button>Vote</button>
+                                <p>0</p>
+                            </div>
+                            <button class="rewardBtn">Reward Buidler <span>0x9233....0322</span></button>
+                        </div>
+
+                        <div class="projectCard">
+                            <div class="cardfirstDet">
+                                <h4>BuidlPay</h4>
+                                <p>2500~KLAY</p>
+                            </div>
+                            <a href="https://www.covalenthq.com/docs/api/"><p class="link">https://www.covalenthq.com/docs/api/</p></a>
+                            <p class="techUsed">Klay Network, Covalent, Kaiakas</p>
+                            <p class="det">Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.Get paid for Buidling
+                                Explore Web3 Techonologies and Buidl around it.
+                                Build real life solutions, get hands-on experience, and get rewarded in KLAY.</p>
+                            <div class="voteDet">
+                                <button>Vote</button>
+                                <p>0</p>
+                            </div>
+                            <button class="rewardBtn">Reward Buidler <span>0x9233....0322</span></button>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <!-- end of Biodata container  -->
+        </div>
+    </main>
+    <!-- end of main -->
+
+    <!-- footer -->
+    <footer class="mainFooter">
+        <!-- footer center -->
+        <!-- end of footer center -->
+    </footer>
+    <!-- end of footer -->
+
+    <!-- script -->
+    <script src="bundle.js"></script>
+   <!-- end of script -->
+</body>
+</html>
