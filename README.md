@@ -9,11 +9,14 @@ This platform tends to support building decentralized applications on the Klatyn
 
 # How it works
 a. The smart contract handles the following functionality: Register project, Vote Project, Reward Builder e.t.c
+
 b. The front end enable users list projects and interact with the already deployed smart contract
 
 
 
 # Others
-The smart contract was deployed and here is the link  https://baobab.scope.klaytn.com/account/0xb44E8d6C64c51EA8CE76fE3766f3e3C19289256E?tabId=internalTx
+The smart contract was deployed to BaoBab and here is the link  https://baobab.scope.klaytn.com/account/0xb44E8d6C64c51EA8CE76fE3766f3e3C19289256E?tabId=internalTx
+
 The Site is live on https://buidlpay.netlify.app/
+
 Here is a link to the slide https://docs.google.com/presentation/d/19DMQna_AUB55_kkEibsGLnSwZd9D0pm0zNxP1gUlxBA/edit?usp=sharing
